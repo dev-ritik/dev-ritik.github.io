@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Ritik kumar</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	background:url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+	float: right;
+	position: relative;
+	margin-left: 150px;
+    top: 70px;
+}
+
+#tab {
+	background: url("tab_wall.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7%;
+	max-width: 100%;
+    height: auto;
+}
+
+.favourites_bar {
+	bottom: 11%;
+	left: 35%;
+	height: 10%;
+	width: 10%;
+  	display: grid;
+  	grid-template-columns: 48% 48% 48% 48% 48% 48%;
+  	grid-template-rows: auto auto;
+  	grid-gap: 10%;
+  	position: absolute;
+  	padding: 10px;
+}
+.favourites_bar > .icon {
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-size: 100%;
+
+}
+.favourites_bar > .name {
+	overflow: hidden;
+    text-overflow:ellipsis;
+	height: 100%;
+	width: 100%;
+  text-align: center;
+  font-size: 0.75vw;
+  color: white;
+}
+</style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+<div class="container">
+	<img id="tab" src="tab.png" width="1000" height="300">
+	<div class="favourites_bar">
+	  	<img src="images/github1.png" class="icon" width="50" height="50"></img>
+	  	<img src="images/Gmail_icon.png" class="icon" width="50" height="50"></img>
+	  	<img src="images/Twitter_icon.png" class="icon" width="50" height="50"></img>
+	  	<img src="images/linkedin_icon.png" class="icon" width="50" height="50"></img>
+	  	<img src="images/Quora_icon.png" class="icon" width="50" height="50"></img>
+	  	<img src="images/fb_icon.png" class="icon" width="50" height="50"></img>
+  		<div class="name">github</div>
+  		<div class="name">Gmail</div>
+  		<div class="name">Twitter</div>
+  		<div class="name">Linkedin</div>
+  		<div class="name">Quora</div>
+	    <div class="name">Facebook</div>
+	</div>
+</div>
 
-<p>My first paragraph.</p>
+
+
+	</div>
+</div>
 
 </body>
 </html>
