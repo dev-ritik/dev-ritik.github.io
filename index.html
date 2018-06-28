@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Ritik kumar</title>
-<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<title>Ritik kumar</title>
+	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
@@ -15,7 +16,8 @@ body {
 	float: right;
 	position: relative;
 	margin-left: 150px;
-    top: 70px;
+    /*top: 70px;*/
+    top: 5vw;
 }
 
 #tab {
@@ -44,15 +46,28 @@ body {
     max-width: 100%;
     background-position: center;
     background-size: 100%;
+    border-radius: 20%;
+}
+
+.favourites_bar > .icon:hover {
+	opacity: 0.75;
+	    box-shadow: 0.2vw 0.2vw LightGray;
 
 }
+.favourites_bar > .icon:active {
+	opacity: 1;
+	    box-shadow: 0.1vw 0.1vw Gray;
+
+}
+
 .favourites_bar > .name {
 	overflow: hidden;
     text-overflow:ellipsis;
 	height: 100%;
 	width: 100%;
   text-align: center;
-  font-size: 0.75vw;
+  font-family: 'Cookie', cursive;
+  font-size: 1.15vw;
   color: white;
 }
 </style>
@@ -68,7 +83,7 @@ body {
 	  	<img src="images/linkedin_icon.png" class="icon" width="50" height="50" alt="Linkedin" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');"></img>
 	  	<img src="images/Quora_icon.png" class="icon" width="50" height="50" alt="Quora" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');"></img>
 	  	<img src="images/fb_icon.png" class="icon" width="50" height="50" alt="fb" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');"></img>
-  		<div class="name">github</div>
+  		<div class="name">Github</div>
   		<div class="name">Gmail</div>
   		<div class="name">Twitter</div>
   		<div class="name">Linkedin</div>
