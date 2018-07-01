@@ -5,6 +5,7 @@
 	<title>Ritik kumar</title>
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 
 body {
@@ -16,8 +17,7 @@ body {
 .container {
 	float: right;
 	position: relative;
-	margin-left: 10%;
-    /*top: 70px;*/
+	margin-left: 0.5%;
     top: 5vw;
 }
 
@@ -72,6 +72,29 @@ body {
     color: white;
 }
 
+#myframe {
+	bottom: 9.3%;
+	left: 5.6%;
+	height: 78.6%;
+	width: 86.5%;
+  	position: absolute;
+  	padding: 10px;
+}
+
+.icon_hover {
+	 opacity: 0.7;
+    cursor: pointer;
+	box-shadow: 0.2vw 0.2vw LightGray;
+	/*background-color: red ;*/
+}
+.name.name_hover {
+font-size: 1vw;
+    color: Gainsboro;
+    cursor: pointer;
+     /*background-color: red ;*/
+ }
+
+
 /*@media screen and (max-width: 780px) {
     .container {
 		float: right;
@@ -82,26 +105,51 @@ body {
 
 }*/
 
-
 </style>
+<script >	
+	$(document).ready(function(){
+  		$(".icon").hover(function(){
+  			var currentId=this.id;
+  			 var $reqs = $("."+currentId+"");
+  			 var $el = $reqs.eq(0); 
+  			 var $el1 = $reqs.eq(1); 
+  			$el.toggleClass('icon_hover');
+  			$el1.toggleClass('name_hover');
+  		});
+	});
+
+	$(document).ready(function(){
+  		$(".name").hover(function(){
+  			var currentId=this.id;
+
+  			 var $reqs = $("."+currentId+"");
+  			 var $el = $reqs.eq(0); 
+  			 var $el1 = $reqs.eq(1); 
+  			$el.toggleClass('icon_hover');
+  			$el1.toggleClass('name_hover');
+  		});
+	});
+</script>
 </head>
 <body>
 
 <div class="container">
 	<img id="tab" src="tab.png" width="1000" height="300">
+	<iframe height="500px" width="100%" src="" name="iframe_a" id="myframe"></iframe>
+
 	<div class="favourites_bar">
-	  	<img src="images/github1.png" class="icon" width="50" height="50" alt="github" onclick="window.open('https://github.com/dev-ritik', '_blank');"></img>
-	  	<img src="images/Gmail_icon.png" class="icon" width="50" height="50" alt="mail" onclick="window.open('mailto:ritikkne@gmail.com', '_blank');"></img>
-	  	<img src="images/Twitter_icon.png" class="icon" width="50" height="50" alt="Twitter" onclick="window.open('https://twitter.com/ritikkne', '_blank');"></img>
-	  	<img src="images/linkedin_icon.png" class="icon" width="50" height="50" alt="Linkedin" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');"></img>
-	  	<img src="images/Quora_icon.png" class="icon" width="50" height="50" alt="Quora" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');"></img>
-	  	<img src="images/fb_icon.png" class="icon" width="50" height="50" alt="fb" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');"></img>
-  		<div class="name">Github</div>
-  		<div class="name">Gmail</div>
-  		<div class="name">Twitter</div>
-  		<div class="name">Linkedin</div>
-  		<div class="name">Quora</div>
-	    <div class="name">Facebook</div>
+	  	<img src="images/github1.png" class="icon one" width="50" height="50" alt="github" id="one" onclick="window.open('https://github.com/dev-ritik', '_blank');"></img>
+	  	<img src="images/Gmail_icon.png" class="icon two" width="50" height="50" alt="mail" id="two" onclick="window.open('mailto:ritikkne@gmail.com', '_blank');"></img>
+	  	<img src="images/Twitter_icon.png" class="icon three" width="50" height="50" alt="Twitter" id="three" onclick="window.open('https://twitter.com/ritikkne', '_blank');"></img>
+	  	<img src="images/linkedin_icon.png" class="icon four" width="50" height="50" alt="Linkedin" id="four" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');"></img>
+	  	<img src="images/Quora_icon.png" class="icon five" width="50" height="50" alt="Quora" id="five" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');"></img>
+	  	<img src="images/fb_icon.png" class="icon six" width="50" height="50" alt="fb" id="six" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');"></img>
+  		<div class="name one" id="one">Github</div>
+  		<div class="name two" id="two">Gmail</div>
+  		<div class="name three" id="three">Twitter</div>
+  		<div class="name four" id="four">Linkedin</div>
+  		<div class="name five" id="five">Quora</div>
+	    <div class="name six" id="six">Facebook</div>
 	</div>
 </div>
 
