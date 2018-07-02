@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 	<title>Ritik kumar</title>
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +10,12 @@
 <style>
 
 body {
-	background:url("back.jpg");
+	/*background:url("back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+  background: #222;
+
 }
 
 .container {
@@ -30,7 +33,7 @@ body {
 
 .favourites_bar {
 	bottom: 11%;
-	left: 35%;
+	left: 33.3%;
 	height: 10%;
 	width: 10%;
   	display: grid;
@@ -38,7 +41,6 @@ body {
   	grid-template-rows: auto auto;
   	grid-gap: 10%;
   	position: absolute;
-  	padding: 10px;
 }
 .favourites_bar > .icon {
     height: auto;
@@ -79,6 +81,18 @@ body {
   	overflow: hidden;
 }
 
+.about {
+  font-family: 'Raleway', sans-serif;
+	bottom: 39.6%;
+	left: 23%;
+	color: #aaa;
+  	position: absolute;
+  	overflow: hidden;
+  	font-weight: 330;
+  	font-size: 2vw; 
+  	margin-left: 75px;
+}
+
 .icon_hover {
 	 opacity: 0.7;
     cursor: pointer;
@@ -86,12 +100,30 @@ body {
 	/*background-color: red ;*/
 }
 .name.name_hover {
-font-size: 1vw;
+	font-size: 1vw;
     color: Gainsboro;
     cursor: pointer;
      /*background-color: red ;*/
  }
 
+.shadows {
+    position: absolute;
+    bottom: 47.15%;
+	left: 32%;
+	margin-left: 3vw;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: white;
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 3vw;
+    transition: all 0.25s ease-out;
+}
+.shadows:hover {
+    text-shadow: -16px 6px 15px #ced0d3;
+}
 
 /*@media screen and (max-width: 780px) {
     .container {
@@ -127,6 +159,60 @@ font-size: 1vw;
   			$el1.toggleClass('name_hover');
   		});
 	});
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 150 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+};
+
+
 </script>
 </head>
 <body>
@@ -134,7 +220,25 @@ font-size: 1vw;
 <div class="container">
 	<img id="tab" src="tab.png" width="1000" height="300">
 	<iframe height="500px" width="100%" src="background - 1.html" name="iframe_a" id="myframe" frameborder="0" scrolling="no"></iframe>
-
+		<div class="shadows">
+    		<span>r</span>
+    		<span>i</span>
+		    <span>t</span>
+		    <span>i</span>
+		    <span>k </span>
+		    <span> </span>    
+		    <span> k</span>
+		    <span>u</span>
+		    <span>m</span>
+		    <span>a</span>
+		    <span>r</span>
+		</div>
+	<h1 class="about">A<span
+     		class="txt-rotate"
+     		data-period="2000"
+     		data-rotate='[ "n Android Dev Enthusiast.", " Computer Science Undergraduate." ]'>
+     	</span>
+	</h1>
 	<div class="favourites_bar">
 	  	<img src="images/github1.png" class="icon one" width="50" height="50" alt="github" id="one" onclick="window.open('https://github.com/dev-ritik', '_blank');"></img>
 	  	<img src="images/Gmail_icon.png" class="icon two" width="50" height="50" alt="mail" id="two" onclick="window.open('mailto:ritikkne@gmail.com', '_blank');"></img>
