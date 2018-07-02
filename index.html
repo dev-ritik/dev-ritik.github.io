@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .container {
 	float: right;
 	position: relative;
@@ -22,9 +23,6 @@ body {
 }
 
 #tab {
-	background: url("tab_wall.jpg");
-	background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 7%;
 	max-width: 100%;
     height: auto;
@@ -73,12 +71,12 @@ body {
 }
 
 #myframe {
-	bottom: 9.3%;
-	left: 5.6%;
-	height: 78.6%;
-	width: 86.5%;
+	bottom: 9.6%;
+	left: 5.8%;
+	height: 81.8%;
+	width: 89%;
   	position: absolute;
-  	padding: 10px;
+  	overflow: hidden;
 }
 
 .icon_hover {
@@ -135,7 +133,7 @@ font-size: 1vw;
 
 <div class="container">
 	<img id="tab" src="tab.png" width="1000" height="300">
-	<iframe height="500px" width="100%" src="" name="iframe_a" id="myframe"></iframe>
+	<iframe height="500px" width="100%" src="background - 1.html" name="iframe_a" id="myframe" frameborder="0" scrolling="no"></iframe>
 
 	<div class="favourites_bar">
 	  	<img src="images/github1.png" class="icon one" width="50" height="50" alt="github" id="one" onclick="window.open('https://github.com/dev-ritik', '_blank');"></img>
