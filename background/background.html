@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>back-effect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="background.js"></script>
+<style>
+canvas {
+  height: auto;
+  width: auto;
+  position: relative;
+  border:1px solid #d3d3d3;
+  background: radial-gradient(circle, #1B2735 0%, #090A0F 100%,black);
+}
+
+
+.twinkling{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+</style>
+</head>
+<body onload=" myGameArea1()" style="margin: 0">
+  
+<canvas id="canvas" width="500" height="500"></canvas>
+      <!-- <div class="twinkling"></div> -->
+
+<!-- <button type="button" id="time" class="button" 
+  onclick="myGamePiece1=null;">
+  Click me to display Date and Time.
+</button>
+
+<button type="button" id="time" class="button" 
+  onclick="clearInterval(reset);">
+  Click me to display Date and Time.
+</button> -->
+
+</body>
+</html>
