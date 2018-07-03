@@ -9,7 +9,7 @@ canvas {
   height: auto;
   width: auto;
   position: relative;
-    border:1px solid #d3d3d3;
+  border:1px solid #d3d3d3;
   background: radial-gradient(circle, #1B2735 0%, #090A0F 100%,black);
 }
 
@@ -100,32 +100,33 @@ function myGameArea1(){
 }
 
 function component(radius, color, x, y) {
-    this.radius = radius;
-    this.x = x;
-    this.y = y;
-    this.speedX = (generateRandom(-2,2)); //represents movements in x direction per game update
-    this.speedY = (generateRandom(-2,2));
-    this.color=color;
-    this.rate=Math.random()/150+0.02;
+  this.radius = radius;
+  this.x = x;
+  this.y = y;
+  this.speedX = (generateRandom(-2,2)); //represents movements in x direction per game update
+  this.speedY = (generateRandom(-2,2));
+  this.color=color;
+  this.rate=Math.random()/150+0.02;
 
-    this.update = function() {
+  this.update = function() {
     ctx = context;
     ctx.beginPath();
     ctx.arc(this.x,this.y,this.radius,0,2*Math.PI);
     ctx.fillStyle=this.color;
     ctx.fill();
-   }
+  }
 
-   this.newPos = function(){//change speed to be updated in next game update
+  this.newPos = function(){//change speed to be updated in next game update
     this.x+=this.speedX;
     this.y+=this.speedY;
-   }
+  }
 
 }
 
 function clear(){
   context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 }
+
 function updateGameArea() {
   clear();
   var work;
@@ -134,24 +135,23 @@ function updateGameArea() {
     work.newPos();
     work.update();
     work.radius=work.radius+work.rate;
-     if (work.x<=0||work.x>=window.innerWidth){
-        array.splice(i,1);
-        i--;
+    if (work.x<=0||work.x>=window.innerWidth){
+      array.splice(i,1);
+      i--;
     }else if (work.y<=0||work.y>=window.innerHeight){
-        array.splice(i,1);
-        i--;
+      array.splice(i,1);
+      i--;
     }
   }
 }
 
 function generateRandom(min, max) {
-    var num = (Math.random() * (max - min + 1)) + min;
-    return (num <= 0.4 && num >= -0.5) ? generateRandom(min, max) : num;
+  var num = (Math.random() * (max - min + 1)) + min;
+  return (num <= 0.4 && num >= -0.5) ? generateRandom(min, max) : num;
 }
 
 </script>
-    <canvas id="canvas" width="500" height="500">
-    </canvas>
+<canvas id="canvas" width="500" height="500"></canvas>
       <!-- <div class="twinkling"></div> -->
 
 <!-- <button type="button" id="time" class="button" 

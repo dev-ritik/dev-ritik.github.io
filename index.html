@@ -88,20 +88,17 @@ body {
 	 opacity: 0.7;
     cursor: pointer;
 	box-shadow: 0.2vw 0.2vw LightGray;
-	/*background-color: red ;*/
 }
 .name.name_hover {
 	font-size: 1vw;
     color: Gainsboro;
     cursor: pointer;
-     /*background-color: red ;*/
  }
 
 .shadows {
     position: absolute;
     bottom: 47.1%;
 	left: 36.5%;
-	/*margin-left: 0.5vw;*/
     text-transform: uppercase;
     text-shadow: -15px 5px 20px #ced0d3;
     color: white;
@@ -238,7 +235,6 @@ body {
 	  	font-size: 4.5vw; 
 	  	margin-left: 0px;
 	}
-
 }
 
 </style>
@@ -252,9 +248,7 @@ body {
   			$el.toggleClass('icon_hover');
   			$el1.toggleClass('name_hover');
   		});
-	});
-
-	$(document).ready(function(){
+	
   		$(".name").hover(function(){
   			var currentId=this.id;
 
@@ -354,13 +348,14 @@ window.onload = function() {
 	  	<img src="images/Quora_icon.png" class="icon six" width="50" height="50" alt="Quora" id="six" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');"></img>
 	  	<img src="images/fb_icon.png" class="icon seven" width="50" height="50" alt="Fb" id="seven" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');"></img>
 	  	
-  		<div class="name one" id="one">Github</div>
-  		<div class="name two" id="two">Gmail</div>
-  		<div class="name three" id="three">Linkedin</div>
-  		<div class="name four" id="four">Twitter</div>
-  		<div class="name five" id="five">Maps</div>
-	    <div class="name six" id="six">Quora</div>
-	    <div class="name seven" id="seven">Facebook</div>
+
+  		<div class="name one" id="one" onclick="window.open('https://github.com/dev-ritik', '_blank');">Github</div>
+  		<div class="name two" id="two" onclick="window.open('mailto:ritikkne@gmail.com', '_blank');">Gmail</div>
+  		<div class="name three" id="three" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');">Linkedin</div>
+  		<div class="name four" id="four" onclick="window.open('https://twitter.com/ritikkne', '_blank');">Twitter</div>
+  		<div class="name five" id="five" onclick="window.open('https://www.google.com/maps/place/D+Block/@29.8636351,77.901077,18.68z/data=!4m12!1m6!3m5!1s0x390eb368eac29afd:0x76d405d17fd1e8e4!2sJawahar+Bhawan!8m2!3d29.8634607!4d77.9010242!3m4!1s0x390eb368ec2bf77b:0x1146b95043a2070c!8m2!3d29.863604!4d77.9015536!5m1!1e1', '_blank');">Maps</div>
+	    <div class="name six" id="six" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');">Quora</div>
+	    <div class="name seven" id="seven" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');">Facebook</div>
 	</div>
 </div>
 
