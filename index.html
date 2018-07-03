@@ -33,11 +33,11 @@ body {
 
 .favourites_bar {
 	bottom: 11%;
-	left: 33.3%;
+	left: 30%;
 	height: 10%;
 	width: 10%;
   	display: grid;
-  	grid-template-columns: 48% 48% 48% 48% 48% 48%;
+  	grid-template-columns: 48% 48% 48% 48% 48% 48% 48%;
   	grid-template-rows: auto auto;
   	grid-gap: 10%;
   	position: absolute;
@@ -81,18 +81,6 @@ body {
   	overflow: hidden;
 }
 
-.about {
-  font-family: 'Raleway', sans-serif;
-	bottom: 39.6%;
-	left: 23%;
-	color: #aaa;
-  	position: absolute;
-  	overflow: hidden;
-  	font-weight: 330;
-  	font-size: 2vw; 
-  	margin-left: 75px;
-}
-
 .icon_hover {
 	 opacity: 0.7;
     cursor: pointer;
@@ -108,13 +96,13 @@ body {
 
 .shadows {
     position: absolute;
-    bottom: 47.15%;
-	left: 32%;
-	margin-left: 3vw;
+    bottom: 47.1%;
+	left: 36.5%;
+	/*margin-left: 0.5vw;*/
     text-transform: uppercase;
     text-shadow: -15px 5px 20px #ced0d3;
     color: white;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.06em;
     font-family: 'Anton', Arial, sans-serif;
     user-select: none;
     text-transform: uppercase;
@@ -123,6 +111,18 @@ body {
 }
 .shadows:hover {
     text-shadow: -16px 6px 15px #ced0d3;
+}
+
+.about {
+  font-family: 'Raleway', sans-serif;
+	bottom: 39.6%;
+	left: 20%;
+	color: #aaa;
+  	position: absolute;
+  	overflow: hidden;
+  	font-weight: 330;
+  	font-size: 2vw; 
+  	margin-left: 75px;
 }
 
 /*@media screen and (max-width: 780px) {
@@ -242,16 +242,19 @@ window.onload = function() {
 	<div class="favourites_bar">
 	  	<img src="images/github1.png" class="icon one" width="50" height="50" alt="github" id="one" onclick="window.open('https://github.com/dev-ritik', '_blank');"></img>
 	  	<img src="images/Gmail_icon.png" class="icon two" width="50" height="50" alt="mail" id="two" onclick="window.open('mailto:ritikkne@gmail.com', '_blank');"></img>
-	  	<img src="images/Twitter_icon.png" class="icon three" width="50" height="50" alt="Twitter" id="three" onclick="window.open('https://twitter.com/ritikkne', '_blank');"></img>
-	  	<img src="images/linkedin_icon.png" class="icon four" width="50" height="50" alt="Linkedin" id="four" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');"></img>
-	  	<img src="images/Quora_icon.png" class="icon five" width="50" height="50" alt="Quora" id="five" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');"></img>
-	  	<img src="images/fb_icon.png" class="icon six" width="50" height="50" alt="fb" id="six" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');"></img>
+	  	<img src="images/linkedin_icon.png" class="icon three" width="50" height="50" alt="Linkedin" id="three" onclick="window.open('https://www.linkedin.com/in/ritik-kumar-031103147/', '_blank');"></img>
+	  	<img src="images/Twitter_icon.png" class="icon four" width="50" height="50" alt="Twitter" id="four" onclick="window.open('https://twitter.com/ritikkne', '_blank');"></img>
+	  	<img src="images/Maps_icon3.png" class="icon five" width="50" height="50" alt="Maps" id="five" onclick="window.open('https://www.google.com/maps/place/D+Block/@29.8636351,77.901077,18.68z/data=!4m12!1m6!3m5!1s0x390eb368eac29afd:0x76d405d17fd1e8e4!2sJawahar+Bhawan!8m2!3d29.8634607!4d77.9010242!3m4!1s0x390eb368ec2bf77b:0x1146b95043a2070c!8m2!3d29.863604!4d77.9015536!5m1!1e1', '_blank');"></img>
+	  	<img src="images/Quora_icon.png" class="icon six" width="50" height="50" alt="Quora" id="six" onclick="window.open('https://www.quora.com/profile/Ritik-Kumar-187', '_blank');"></img>
+	  	<img src="images/fb_icon.png" class="icon seven" width="50" height="50" alt="Fb" id="seven" onclick="window.open('https://www.facebook.com/ritikkne', '_blank');"></img>
+	  	
   		<div class="name one" id="one">Github</div>
   		<div class="name two" id="two">Gmail</div>
-  		<div class="name three" id="three">Twitter</div>
-  		<div class="name four" id="four">Linkedin</div>
-  		<div class="name five" id="five">Quora</div>
-	    <div class="name six" id="six">Facebook</div>
+  		<div class="name three" id="three">Linkedin</div>
+  		<div class="name four" id="four">Twitter</div>
+  		<div class="name five" id="five">Maps</div>
+	    <div class="name six" id="six">Quora</div>
+	    <div class="name seven" id="seven">Facebook</div>
 	</div>
 </div>
 
