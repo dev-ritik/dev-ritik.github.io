@@ -1,11 +1,11 @@
 var context;
 var array = [];
-var update=window.setInterval(updateGameArea,20);
-var reset=setInterval(startGame,1000);
+var update=window.setInterval(updateCanvas,20);
+var reset=setInterval(startAnim,1000);
 var canvas;
 //update timer every second//update timer every second
 
-function startGame() {
+function startAnim() {
   for(var i=0;i<15;i++){
     array.push(new component( generateRandom(0,3), "white", window.innerWidth/2, window.innerHeight/2));
   }
@@ -17,9 +17,9 @@ function startGame() {
   window.onfocus=function(){
     console.log("here1"+reset+update);
     if(!reset)
-      reset=window.setInterval(startGame,1000);
+      reset=window.setInterval(startAnim,1000);
     if(!update)
-      update=window.setInterval(updateGameArea,20);
+      update=window.setInterval(updateCanvas,20);
     };
     window.onblur=function(){
     console.log("here2"+reset+update);
@@ -44,6 +44,9 @@ function refreshCanvas(){
 }
 
 function makeCanvas(){
+  startAnim();
+  update=window.setInterval(updateCanvas,20);
+  reset=setInterval(startAnim,1000);
   canvas = document.getElementById('canvas');
   refreshCanvas();
     if (canvas.getContext) {
@@ -81,7 +84,7 @@ function clear(){
   context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 }
 
-function updateGameArea() {
+function updateCanvas() {
   clear();
   var work;
   for(var i=0;i<array.length;i++){

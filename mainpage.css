@@ -33,6 +33,7 @@ body {
   	grid-template-rows: auto auto;
   	grid-gap: 10%;
   	position: absolute;
+    transition: bottom 0.5s ease , left 0.5s ease 0s, width 0.4s ease 0.1s, grid-gap 0.3s ease 0.3s;
 }
 .favourites_bar > .icon {
     height: auto;
@@ -71,6 +72,7 @@ body {
 	width: 89%;
   	position: absolute;
   	overflow: hidden;
+    transition: bottom 0.5s ease,left 0.5s ease,height 0.5s ease,width 0.5s ease;
 }
 
 .icon_hover {
@@ -97,6 +99,7 @@ body {
     text-transform: uppercase;
     font-size: 3vw;
     transition: all 0.25s ease-out;
+	transition: bottom 0.4s ease,left 0.4s ease,font-size 0.4s ease;
 }
 .shadows:hover {
     text-shadow: -16px 6px 15px #ced0d3;
@@ -112,6 +115,7 @@ body {
   	font-weight: 330;
   	font-size: 2vw; 
   	margin-left: 75px;
+	transition: bottom 0.4s ease,left 0.4s ease,font-size 0.4s ease;
 }
 
 @media screen and (max-width: 425px) {
@@ -145,6 +149,7 @@ body {
 	  	grid-template-rows: auto auto;
 	  	grid-gap: 18%;
 	  	position: absolute;
+    	transition: bottom 0.5s ease , left 0.5s ease 0s, width 0.4s ease 0.1s, grid-gap 0.3s ease 0.3s;
 
 	}
 	.favourites_bar > .icon {
@@ -163,7 +168,6 @@ body {
 	.favourites_bar > .icon:active {
 		opacity: 1;
 		box-shadow: 0.2vw 0.2vw Gray;
-
 	}
 
 	.favourites_bar > .name {
@@ -184,6 +188,7 @@ body {
 		width: 100vw;
 	  	position: absolute;
 	  	overflow: hidden;
+    	transition: bottom 0.5s ease,left 0.5s ease,height 0.5s ease,width 0.5s ease;
 	}
 
 	.icon_hover {
@@ -209,7 +214,7 @@ body {
 	    user-select: none;
 	    text-transform: uppercase;
 	    font-size: 5.5vw;
-	    transition: all 0.25s ease-out;
+	    transition: bottom 0.4s ease,left 0.4s ease,font-size 0.4s ease;
 	}
 	.shadows:hover {
 	    text-shadow: -16px 6px 15px #ced0d3;
@@ -224,5 +229,7 @@ body {
 	  	font-weight: 330;
 	  	font-size: 4.5vw; 
 	  	margin-left: 0px;
+	    transition: bottom 0.4s ease,left 0.4s ease,font-size 0.4s ease;
+
 	}
 }
