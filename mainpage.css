@@ -114,7 +114,7 @@ body {
   	margin-left: 75px;
 }
 
-@media screen and (max-width: 433px) {
+@media screen and (max-width: 425px) {
 	/*mobile version*/
 
     body {
@@ -145,6 +145,7 @@ body {
 	  	grid-template-rows: auto auto;
 	  	grid-gap: 18%;
 	  	position: absolute;
+
 	}
 	.favourites_bar > .icon {
 	    height: auto;

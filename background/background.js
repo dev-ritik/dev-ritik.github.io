@@ -2,10 +2,10 @@ var context;
 var array = [];
 var update=window.setInterval(updateGameArea,20);
 var reset=setInterval(startGame,1000);
+var canvas;
 //update timer every second//update timer every second
 
 function startGame() {
-
   for(var i=0;i<15;i++){
     array.push(new component( generateRandom(0,3), "white", window.innerWidth/2, window.innerHeight/2));
   }
@@ -15,14 +15,14 @@ function startGame() {
 (function(){
   console.log("here");
   window.onfocus=function(){
-  console.log("here1"+reset+update);
+    console.log("here1"+reset+update);
     if(!reset)
-    reset=window.setInterval(startGame,1000);
+      reset=window.setInterval(startGame,1000);
     if(!update)
-    update=window.setInterval(updateGameArea,20);
-  };
-  window.onblur=function(){
-  console.log("here2"+reset+update);
+      update=window.setInterval(updateGameArea,20);
+    };
+    window.onblur=function(){
+    console.log("here2"+reset+update);
     if(reset){
       window.clearInterval(reset);
       reset=null;
@@ -31,13 +31,21 @@ function startGame() {
       window.clearInterval(update);
       update=null;
     }
-  };//stop heartbeat
+  };
+  window.onresize = function(event) {
+    refreshCanvas();
+  }
+
 })();
 
-function myGameArea1(){
-  var canvas = document.getElementById('canvas');
+function refreshCanvas(){
   canvas.width=window.innerWidth;
   canvas.height=window.innerHeight;
+}
+
+function makeCanvas(){
+  canvas = document.getElementById('canvas');
+  refreshCanvas();
     if (canvas.getContext) {
       context = this.canvas.getContext("2d");
       document.body.insertBefore(this.canvas, document.body.childNodes[0]);
@@ -67,7 +75,6 @@ function component(radius, color, x, y) {
     this.x+=this.speedX;
     this.y+=this.speedY;
   }
-
 }
 
 function clear(){
