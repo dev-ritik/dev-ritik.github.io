@@ -1,26 +1,44 @@
 
 body {
-	/*background:url("images/back.jpg");
+	background:url("images/back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
-  	background: #222;
+  	/*background: #222;*/
 }
 
 .container {
 	float: right;
 	position: relative;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
+	margin-left: 3%;
+	margin-right: 3%;
     top: 5vw;
+    border-radius: 7%;
+    -webkit-filter: drop-shadow(0.5vw 0.5vw 0.8vw #595959);
+    filter: drop-shadow(0.5vw 0.5vw 0.8vw #595959);
 }
 
 #tab {
     border-radius: 7%;
 	max-width: 100%;
     height: auto;
+}
+
+#time {
+	color: white;
+	position: absolute;
+    bottom: 47.1%;
+	left: 36.5%;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: white;
+    letter-spacing: -0.06em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 3vw;
 }
 
 .favourites_bar {
@@ -86,7 +104,7 @@ body {
 }
 
 .icon_hover {
-	 opacity: 0.7;
+	opacity: 0.7;
     cursor: pointer;
 	box-shadow: 0.2vw 0.2vw LightGray;
 }
@@ -126,7 +144,7 @@ body {
 }
 
 .about {
-  font-family: 'Raleway', sans-serif;
+  	font-family: 'Raleway', sans-serif;
 	bottom: 39.6%;
 	left: 20%;
 	color: #aaa;
@@ -147,6 +165,7 @@ body {
 	/*mobile version*/
 
     body {
+    	background-image: none;
 	  	background: #1B2735;
   		overflow:hidden;
 	}
@@ -154,10 +173,14 @@ body {
 	.container {
 		height: 100vh;
 	    width: 100vw; 
+		margin-left: 0px;
+		margin-right: 0px;
 		background-color: #1B2735;
 		float: none;
 		position: absolute;
 		top: 0px;
+	    border-radius: 0px;
+    	filter: none;
 	}
 
 	#tab {

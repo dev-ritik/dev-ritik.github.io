@@ -1,7 +1,7 @@
 var context;
 var array = [];
-var update=window.setInterval(updateCanvas,20);
-var reset=setInterval(startAnim,1000);
+var update;
+var reset;
 var canvas;
 //update timer every second//update timer every second
 
@@ -9,7 +9,6 @@ function startAnim() {
   for(var i=0;i<15;i++){
     array.push(new component( generateRandom(0,3), "white", window.innerWidth/2, window.innerHeight/2));
   }
-    
 }
 
 (function(){
@@ -20,7 +19,9 @@ function startAnim() {
       reset=window.setInterval(startAnim,1000);
     if(!update)
       update=window.setInterval(updateCanvas,20);
+    console.log("here1"+reset+update);
     };
+
     window.onblur=function(){
     console.log("here2"+reset+update);
     if(reset){
@@ -31,13 +32,19 @@ function startAnim() {
       window.clearInterval(update);
       update=null;
     }
+    console.log("here2"+reset+update);
+
   };
+
   window.onresize = function(event) {
     refreshCanvas();
   }
-
 })();
 
+$(document).ready(function(){
+  window.focus();
+
+});
 function refreshCanvas(){
   canvas.width=window.innerWidth;
   canvas.height=window.innerHeight;

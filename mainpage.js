@@ -1,22 +1,21 @@
 $(document).ready(function(){
-		$(".icon").hover(function(){
-			var currentId=this.id;
-			 var $reqs = $("."+currentId+"");
-			 var $el = $reqs.eq(0); 
-			 var $el1 = $reqs.eq(1); 
-			$el.toggleClass('icon_hover');
-			$el1.toggleClass('name_hover');
-		});
+	$(".icon").hover(function(){
+		var currentId=this.id;
+		 var $reqs = $("."+currentId+"");
+		 var $el = $reqs.eq(0); 
+		 var $el1 = $reqs.eq(1); 
+		$el.toggleClass('icon_hover');
+		$el1.toggleClass('name_hover');
+	});
 
-		$(".name").hover(function(){
-			var currentId=this.id;
-
-			 var $reqs = $("."+currentId+"");
-			 var $el = $reqs.eq(0); 
-			 var $el1 = $reqs.eq(1); 
-			$el.toggleClass('icon_hover');
-			$el1.toggleClass('name_hover');
-		});
+	$(".name").hover(function(){
+		var currentId=this.id;
+		 var $reqs = $("."+currentId+"");
+		 var $el = $reqs.eq(0); 
+		 var $el1 = $reqs.eq(1); 
+		$el.toggleClass('icon_hover');
+		$el1.toggleClass('name_hover');
+	});
 });
 
 var TxtRotate = function(el, toRotate, period) {
