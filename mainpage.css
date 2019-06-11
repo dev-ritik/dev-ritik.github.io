@@ -47,7 +47,7 @@ body {
 	height: 11%;
 	width: 10%;
   	display: grid;
-  	grid-template-columns: 48% 48% 48% 48% 48% 48% 48%;
+  	grid-template-columns: 48% 48% 48% 48% 48% 48% 48% 48%;
   	grid-template-rows: auto auto;
   	grid-gap: 10%;
   	position: absolute;
@@ -193,7 +193,7 @@ body {
 		left: 5%;
 		width: 12%;
 	  	display: grid;
-	  	grid-template-columns: 88% 88% 88% 88% 88% 88% 88%;
+	  	grid-template-columns: 78% 78% 78% 78% 78% 78% 78% 78%;
 	  	grid-template-rows: auto auto;
 	  	grid-gap: 18%;
 	  	position: absolute;
@@ -228,9 +228,10 @@ body {
 	    text-overflow:ellipsis;
 		height: 100%;
 		width: 100%;
-	    text-align: center;
+		margin-top: 2%;
+	    text-align: top;
 	    font-family: 'Cookie', cursive;
-	  	font-size: 4vw;
+	  	font-size: 3.8vw;
 	    color: white;
 	}
 
