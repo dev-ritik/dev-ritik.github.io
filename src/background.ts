@@ -85,7 +85,6 @@ function refreshCanvas(): void {
 function makeCanvas(): CanvasRenderingContext2D {
   startAnim();
   canvas = document.getElementById('canvas') as HTMLCanvasElement;
-  console.log(canvas);
   refreshCanvas();
 
   if (canvas.getContext) {
