@@ -1,5 +1,13 @@
-# dev-ritik.github.io
-link to the under construction page: [https://dev-ritik.github.io/](https://dev-ritik.github.io/)
+# Homepage
+Link to the under construction page: [https://dev-ritik.github.io/](https://dev-ritik.github.io/)
+
+# Instructions
+Run
+* npm run lint to lint js and ts files
+* npm run dev to generate dev (debug) js files
+* npm run build to generate min js files
+
+Typescript is :heart:  
 
 # Inspirations:
 The font-animations used in the page are from:
