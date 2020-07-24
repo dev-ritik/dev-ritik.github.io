@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "outDir": "dist/",
+    "rootDir": "src",
+    "sourceMap": true,
+    "target": "ES6",
+    "plugins": [{"name": "typescript-tslint-plugin"}]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

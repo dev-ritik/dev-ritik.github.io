@@ -1,0 +1,32 @@
+{
+    "name": "homepage",
+    "version": "1.0.0",
+    "description": "My home page on github pages",
+    "scripts": {
+        "clean": "del dist/js/*",
+        "prebuild": "npm run clean",
+        "prewatch": "npm run clean",
+        "build": "webpack --config webpack.prod.js",
+        "dev": "webpack --config webpack.dev.js",
+        "watch": "webpack -w --config webpack.dev.js",
+        "lint": "tslint 'src/**/*.{ts,tsx,js}'"
+    },
+    "author": "Ritik",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@microsoft/fast-tslint-rules": "^3.1.4",
+        "ts-loader": "^4.0.1",
+        "tslint": "^6.1.2",
+        "tslint-config-prettier": "^1.18.0",
+        "del-cli": "^3.0.1",
+        "cpy-cli": "^3.1.1",
+        "typescript": "^3.8.0",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+        "@types/jquery": "^3.5.0",
+        "del-cli": "^3.0.1"
+    }
+}

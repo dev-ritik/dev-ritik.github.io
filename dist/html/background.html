@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>back-effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/background.js"></script>
+    <style>
+        canvas {
+            height: auto;
+            width: auto;
+            position: relative;
+            border: 1px solid #d3d3d3;
+            background: radial-gradient(circle, #1B2735 0%, #090A0F 100%, black);
+        }
+
+        @keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
+
+        @-webkit-keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
+
+        @-moz-keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
+
+        @-ms-keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
+
+    </style>
+</head>
+<body style="margin: 0">
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+</body>
+</html>

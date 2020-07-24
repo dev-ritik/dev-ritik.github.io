@@ -1,0 +1,46 @@
+{
+    "extends": [
+        "@microsoft/fast-tslint-rules",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "jsx-no-multiline-js": false,
+        "object-literal-shorthand": false,
+        "indent": [true, "spaces", 2],
+        "quotemark": [true, "single", "jsx-single"],
+        "curly": true,
+        "no-duplicate-switch-case": true,
+        "no-trailing-whitespace": true,
+        "semicolon": [true, "always"],
+        "no-irregular-whitespace": true,
+        "prefer-const": true,
+        "member-ordering": {
+            "options": {
+                "order": [
+                    "public-static-field",
+                    "public-static-method",
+                    "protected-static-field",
+                    "protected-static-method",
+                    "private-static-field",
+                    "private-static-method",
+                    "instance-field",
+                    "constructor"
+                ]
+            }
+        },
+        "array-type": [true, "array-simple"],
+        "file-name-casing": [
+            true,
+            {
+                ".ts*": "kebab-case",
+                ".jsx": "kebab-case"
+            }
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**",
+            "dist/**"
+        ]
+    }
+}
