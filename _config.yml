@@ -10,7 +10,7 @@ description: |
   <div class="image">
     <img class="thumbnail" src="/public/assets/me.jpg">
   </div>
-url: http://localhost:4000
+url: https://ritik.ml
 baseurl: ''
 paginate: 4
 permalink: pretty
