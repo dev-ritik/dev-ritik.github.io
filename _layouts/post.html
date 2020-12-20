@@ -3,8 +3,21 @@ layout: default
 ---
 
 <div class="post">
+  {% if page.medium %}
+  <h1 class="post-title-subtitle">{{ page.title }}</h1>
+  <i>*This is a mirror to the content posted on <a href="{{ page.medium }}"><i class="fa fa-medium"></i></a></i>
+  {% else %}
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% endif %}
+  <br>
+  <br>
+
+  <section class="post-meta">
+    {% if page.date %}
+    <div class="left-align"><i class="fa fa-calendar"></i> {{ page.date | date: "%B %-d, %Y" }}</div>
+    {% endif %}
+    {% include reading-time.html %}
+  </section>
   {{ content }}
 </div>
 
@@ -13,14 +26,14 @@ layout: default
   <h2>Related posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
+    <li>
+      <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <small>{{ post.date | date_to_string }}</small>
+        </a>
+      </h3>
+    </li>
     {% endfor %}
   </ul>
 </div>

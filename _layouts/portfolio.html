@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<h1>Active Projects</h1>
+<div class="projects">
+  <ul>
+    {% for project in page.projects %}
+    {% if project[1].url %}
+    {% assign url = project[1].url %}
+    {% else %}
+    {% assign url = "/" | append: project[0] | append: "/" %}
+    {% endif %}
+    <li class="project" data-title="{{project[0]}}" data-color="{{project[1].color}}">
+      <a href="{{url}}">{{project[0]|upcase}}</a>
+      <ul class="innerdetail">
+        <li>{{project[1].desc}}</li>
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{{ content }}
+<script src="/public/js/geopattern.min.js"></script>
+<script>
+  const patterns = ['octogons', 'plusSigns', 'xes', 'squares', 'nestedSquares', 'concentricCircles'];
+  projects = [...document.getElementsByClassName('project')];
+  for (const i in projects) {
+    let project = projects[i];
+    const pattern = GeoPattern.generate(project.getAttribute("data-title"), {
+      color: project.getAttribute("data-color"),
+      generator: patterns[Math.floor(Math.random() * patterns.length)]
+    });
+    project['style'].backgroundImage = pattern.toDataUrl();
+  }
+</script>

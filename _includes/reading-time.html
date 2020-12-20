@@ -1,0 +1,13 @@
+{% capture words %}
+{% if page.name == "index.html" %}
+{{ post.content | number_of_words | minus: 150 }}
+{% else %}
+{{ content | number_of_words | minus: 150 }}
+{% endif %}
+{% endcapture %}
+{% unless words contains '-' %}
+<div class="post-readtime right-align"><i class="fa fa-clock-o" aria-hidden="true"></i>
+  {{ words | plus: 120 | divided_by: 150 | append: ' Minutes Read' }}
+</div>
+
+{% endunless %}
