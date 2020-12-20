@@ -24,13 +24,13 @@ permalink: experiences.html
       </div>
       <div class="right-align">
         {% if e.url %}
-        <a href="{{ e.url }}"><i class="fa fa-link"></i>&nbsp;&nbsp;Web Link</a>
+        <a href="{{ e.company_url }}"><i class="fa fa-link"></i>&nbsp;&nbsp;Web Link</a>
         {% else%}
         <span class="not-available"><i class="fa fa-link"></i>&nbsp;&nbsp;Not Available</span>
         {% endif %}
       </div>
+      <p class="card-language"><i class="fa fa-code"></i>&nbsp;&nbsp;{{ e.tech }}</p>
     </section>
-    <p class="card-language"><i class="fa fa-code"></i>&nbsp;&nbsp;{{ e.tech }}</p>
 
     {{ e.content }}
   </div>

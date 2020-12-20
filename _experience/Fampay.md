@@ -1,16 +1,16 @@
 ---
-layout: post
-permalink: /experience/Fampay/
+layout: page
+permalink: /experience/Fampay
 title: Fampay
-url: fampay.in
 tech: Python-Django, Postgres, ELK
 order: 10
+company_url: https://fampay.in
 ---
 FamPay is India’s first neobank for teenagers and their families.
 
 Major highlights of what I was able to accomplish:
-- Set up EFK Log Pipeline
-- Add user-location based filter storing them in Postgres-Postgis.
-- Add new KYC and sign-up flows among otherthings
+- Set up `EFK` Log Pipeline
+- Add user-location based filter storing them in `Postgres-Postgis`.
+- Add new `KYC` and sign-up flows among other things
 - Add User Survey Feature
-- Add BharatQR support
+- Add `BharatQR` support

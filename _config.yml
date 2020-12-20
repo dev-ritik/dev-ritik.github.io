@@ -3,6 +3,9 @@ collections:
   experience:
     output: true
     sort_by: order
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
 # Setup
 title: Ritik Kumar
 tagline: ''

@@ -14,7 +14,7 @@ Engineer. I have also contributed to some open-sourced projects. I have also dev
 apps for the campus.
 
 I am mostly building cool stuff, usually around Linux messing with configs or fixing some issues in web servers hosted
-on AWS.
+on `AWS`.
 
 If you found anything around interesting, use any of the channels below to connect with me:)
 
