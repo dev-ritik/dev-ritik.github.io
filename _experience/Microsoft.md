@@ -3,7 +3,7 @@ layout: page
 permalink: /experience/Microsoft
 title: Microsoft-EDGE
 tech: Javascript, Typescript, C++
-order: 20
+reading_order: 20
 company_url: https://www.microsoft.com/en-us/edge
 ---
 

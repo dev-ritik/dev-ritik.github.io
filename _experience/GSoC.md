@@ -4,7 +4,7 @@ permalink: /experience/GSoC
 title: Google Summer of Code - Named Data Network
 github: https://github.com/named-data-mobile/ndn-photo-app
 tech: Java, XML, C++
-order: 30
+reading_order: 30
 company_url: https://named-data.net/
 ---
 

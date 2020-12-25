@@ -2,8 +2,8 @@
 layout: page
 permalink: /experience/Fampay
 title: Fampay
-tech: Python-Django, Postgres, ELK
-order: 10
+tech: Python-Django, Postgres-Postgis, ELK
+reading_order: 10
 company_url: https://fampay.in
 ---
 FamPay is India’s first neobank for teenagers and their families.

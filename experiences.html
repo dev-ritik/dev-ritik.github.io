@@ -6,7 +6,8 @@ permalink: experiences.html
 
 <h1>Experiences</h1>
 <div class="posts">
-  {% for e in site.experience %}
+  {% assign experiences = site.experience | sort: "reading_order" %}
+  {% for e in experiences %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ e.url | absolute_url }}">
