@@ -1,13 +1,17 @@
-{% capture words %}
-{% if page.name == "index.html" %}
-{{ post.content | number_of_words | minus: 150 }}
+{% capture time %}
+{% if page.name == "index.html" and post.time %}
+{{ post.time }}
+{% elsif page.name == "index.html" %}
+{{ page.content | number_of_words | divided_by: 150 }}
+{% elsif page.time %}
+{{ page.time }}
 {% else %}
-{{ content | number_of_words | minus: 150 }}
+{{ content | number_of_words | divided_by: 150 }}
 {% endif %}
 {% endcapture %}
-{% unless words contains '-' %}
+{% unless time contains '-' or time contains 0 %}
 <div class="post-readtime right-align"><i class="fa fa-clock-o" aria-hidden="true"></i>
-  {{ words | plus: 120 | divided_by: 150 | append: ' Minutes Read' }}
+  {{ time | append: ' Minutes Read' }}
 </div>
 
 {% endunless %}

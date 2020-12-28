@@ -32,16 +32,22 @@ title: Home
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
+      {% if post.medium %}
+      <a href="{{ post.medium | absolute_url }}">
+      {% else %}
       <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
+      {% endif %}
+      {{ post.title }}
       </a>
     </h1>
 
     <section class="post-excerpt" itemprop="description">
 <!--      https://gist.github.com/mikeygee/2626538-->
       {{ post.content | split:'<!--break-->' | first }}
-      {% if post.content contains '<!--break-->' %}
-      <a href="{{ post.url }}">read more</a>
+      {% if post.medium %}
+      <a href="{{ post.medium }}">read more...</a>
+      {% else %}
+      <a href="{{ post.url }}">read more...</a>
       {% endif %}
     </section>
     <br>

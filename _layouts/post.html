@@ -19,6 +19,9 @@ layout: default
     {% include reading-time.html %}
   </section>
   {{ content }}
+  {% if page.medium %}
+  <a href="{{ page.medium }}">read more...</a>
+  {% endif %}
 </div>
 
 {% if site.related_posts.size >= 1 %}
