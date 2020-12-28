@@ -4,14 +4,14 @@ title: About
 permalink: about.html
 ---
 
-Hey there! I'm Ritik Kumar, 4th Year Senior from **Indian Institute of Technology, Roorkee**. I am a Backend Developer
-interested in Computer networks.
+Hey there! I'm Ritik Kumar, 4th Year Senior undergraduate from **Indian Institute of Technology, Roorkee**. I am a
+Backend Developer interested in Computer networks.
 
-I was `Google Summer of Code` Student Developer 2019 for `NDN (Named Data Network)` and worked on `NpChat`, a peer to
-peer decentralised media sharing application based on NDN for Android. I had interned with `Microsoft India`, where I
-worked on their new `EDGE` browser based on `Chromium`. Recently, I interned at [Fampay](fampay.in) as a Backend
-Engineer. I have also contributed to some open-sourced projects. I have also developed and maintained a few widely used
-apps for the campus.
+I was `Google Summer of Code` Student Developer 2019 for [NDN](https://named-data.net/project/) `(Named Data Network)`
+and worked on `NpChat`, a peer to peer decentralised media sharing application based on NDN for Android. I had interned
+with `Microsoft India`, where I worked on their new `EDGE` `(Anaheim)` browser-based on `Chromium`. Recently, I
+interned at [Fampay](https://fampay.in) as a Backend Engineer. I have also contributed to some open-sourced projects. I
+have also developed and maintained a few widely used apps for the campus.
 
 I am mostly building cool stuff, usually around Linux messing with configs or fixing some issues in web servers hosted
 on `AWS`.
