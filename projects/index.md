@@ -3,41 +3,56 @@ layout: portfolio
 title: List Of Projects
 projects:
   Scalable Data-Analytics-Pipeline:
-    desc: Packet capture and Analysis
+    desc: Capture packet level data from the last mile network which consists of end-users’ devices like home routers.
     color: "#1CCD54"
-    url: https://snl.cs.ucsb.edu/
+    url: https://docs.google.com/presentation/d/1mWfYzblyGt0pJsIyWUfN_hJ8c3bJm8ZCMXgchbn23-k/edit?usp=sharing
+    tech: BCC, eBPF, XDP
   Appetizer:
-    desc: Official mobile application for IIT Roorkee mess
+    desc: Official mobile application for IIT Roorkee aiming towards the management of mess functionalities. I worked as the Backend Head and Product Manager
     color: "#FBC014"
     url: https://mess.iitr.ac.in/
+    tech: Python-Django, JS, Postgres, AWS, Docker, Firebase
   Codephile:
-    desc: Social networking application for competitive coders
+    desc: A Social networking application for competitive coders. I worked as the Backend Lead for the project.
     color: "#499BFF"
     url: https://www.facebook.com/mdgiitr/posts/1600462356780086
+    tech: Golang, Redis, ElastiCache, ElasticSearch, AWS, Firebase, MongoDB, Bee
+  NpChat:
+    desc: Media-sharing peer-to-peer decentralised application built for Android on Named Data Network (ICN). With the app, wrote the AIMD pipelined Segment-Fetcher for their Java Support Library.
+    color: "#7102A0"
+    tech: NDN, Java, Android
+    url: https://summerofcode.withgoogle.com/archive/2019/projects/4940146259001344/
+    github: https://github.com/named-data-mobile/ndn-photo-app
   Security App:
-    desc: App to digitize the physical security at IIT Roorkee
+    desc: App to digitize the physical security at IIT Roorkee.
     color: "#5EA0CA"
     url: https://play.google.com/store/apps/details?id=in.ac.iitr.mdg.securityapp
-  NpChat:
-    desc: Media-sharing peer-to-peer decentralised application built for Android on NDN (ICN)
-    color: "#7102A0"
+    tech: Python-Django, Postgres, AWS, Docker
   ShuffleWallpaper:
     desc: Shuffle and set wallpaper for Ubuntu
     color: "#19A6B8"
+    github: https://github.com/dev-ritik/ShuffleWallpaper
+    tech: Linux, Bash
   EmojiReactionView:
     desc: An Android library to make Emoji Reactions on images in a manner Instagram does this!
     color: "#0E5586"
-    url: https://github.com/dev-ritik/EmojiReactionView
+    github: https://github.com/dev-ritik/EmojiReactionView
+    tech: Java, Android
   news:
     desc: Fake news building and hosting website.
     color: "#ff4321"
+    github: https://github.com/dev-ritik/news
+    tech: Python-Django, JS, Postgres
   LoginAction:
     desc: Library to help make login activity with Firebase
     color: "#FFCB2B"
+    tech: Java, Android
+    github: https://github.com/dev-ritik/LoginAction
   Sarah:
     desc: Personal time and location based reminder assistant.
     color: "#239923"
-    url: https://github.com/dev-ritik/Sarah
+    github: https://github.com/codekaust/Sarah
+    tech: Java, Android
 ---
 
 ## Open Source Contributions
