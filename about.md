@@ -32,5 +32,7 @@ If you found anything around interesting, use any of the channels below to conne
 &nbsp; &nbsp; &nbsp;
 <a href="https://www.youtube.com/channel/UCaBW8G_TO9dQ9yjlmsAjpsg"><i class="fa fa-youtube" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
+<a href="/key.pub"><i class="fa fa-key" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+&nbsp; &nbsp; &nbsp;
 </p>
 </div>
