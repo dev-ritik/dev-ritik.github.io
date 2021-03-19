@@ -2,11 +2,11 @@
 layout: portfolio
 title: List Of Projects
 projects:
-  Scalable Data-Analytics-Pipeline:
-    desc: Capture packet level data from the last mile network which consists of end-users’ devices like home routers.
-    color: "#1CCD54"
+  Network streaming analytics systems for last-mile networks:
+    desc: Capture packet-level data from the last mile network (end-users devices like home routers).
+    color: "#003660"
     url: https://docs.google.com/presentation/d/1mWfYzblyGt0pJsIyWUfN_hJ8c3bJm8ZCMXgchbn23-k/edit?usp=sharing
-    tech: BCC, eBPF, XDP
+    tech: eBPF, BCC, Wireshark
   Appetizer:
     desc: Official mobile application for IIT Roorkee aiming towards the management of mess functionalities. I worked as the Backend Head and Product Manager
     color: "#FBC014"
@@ -28,6 +28,11 @@ projects:
     color: "#5EA0CA"
     url: https://play.google.com/store/apps/details?id=in.ac.iitr.mdg.securityapp
     tech: Python-Django, Postgres, AWS, Docker
+  Vault:
+    desc: Symmetric Key based data backup & recovery utility.
+    color: "#89E051"
+    github: https://github.com/dev-ritik/vault
+    tech: Linux, Bash, find, gpg, pass
   ShuffleWallpaper:
     desc: Shuffle and set wallpaper for Ubuntu
     color: "#19A6B8"
@@ -56,8 +61,11 @@ projects:
 ---
 
 ## Open Source Contributions
+[Jinora](https://github.com/mdg-iitr/jinora)
+: Slack webhook app to create anonymous public channels. Written in `Coffeescript`, it is deployed on `Heroku`
+
 [Hubot MDG](https://github.com/mdg-iitr/bot)
-: An internal bot for Mobile Development Group. Written in `Coffeescript`, it is deployed on AWS
+: An internal bot for Mobile Development Group. Written in `Coffeescript`, it is deployed on `AWS`
 
 [jndn](https://github.com/named-data/jndn)
 : Implementation of a `Named Data Networking` client library written in Java.
