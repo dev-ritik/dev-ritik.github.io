@@ -15,7 +15,8 @@ projects:
   Codephile:
     desc: A Social networking application for competitive coders. I worked as the Backend Lead for the project.
     color: "#499BFF"
-    url: https://www.facebook.com/mdgiitr/posts/1600462356780086
+    url: https://codephile.mdg.iitr.ac.in/
+    github: https://github.com/mdg-iitr/codephile-backend
     tech: Golang, Redis, ElastiCache, ElasticSearch, AWS, Firebase, MongoDB, Bee
   NpChat:
     desc: Media-sharing peer-to-peer decentralised application built for Android on Named Data Network (ICN). With the app, wrote the AIMD pipelined Segment-Fetcher for their Java Support Library.
