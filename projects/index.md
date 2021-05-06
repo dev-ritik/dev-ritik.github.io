@@ -34,6 +34,11 @@ projects:
     color: "#89E051"
     github: https://github.com/dev-ritik/vault
     tech: Linux, Bash, find, gpg, pass
+  Elections-2021:
+    desc: Live Streaming setup for West Bengal results 2021
+    color: "#E2261C"
+    url: https://www.youtube.com/watch?v=AHXu84uznMc
+    tech: Flask, React, Selenium, OBS
   ShuffleWallpaper:
     desc: Shuffle and set wallpaper for Ubuntu
     color: "#19A6B8"
