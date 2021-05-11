@@ -12,8 +12,10 @@ Parts of this project are 'inspired' from these sources:
 - https://github.com/jogendra/jogendra.github.io
 
 Dark(Dim) mode:
-- Github's UI colors
+- https://derekkedziora.com/blog/dark-mode-revisited
 - Button used here: https://create-react-app.dev/
+- Github's Dark-dimmed mode UI colors
+
 
 ## License
 `Lanyon` Jekyll theme is under the [MIT license](https://github.com/poole/lanyon/blob/master/LICENSE.md).
