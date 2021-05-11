@@ -23,7 +23,6 @@
  * Posts and pages
  * Pagination
  * Reverse layout
- * Themes
  */
 
 /*
@@ -38,6 +37,12 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
@@ -45,7 +50,6 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #313131;
   letter-spacing: -.025rem;
 }
 
@@ -60,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 /*
@@ -70,6 +75,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   max-width: 28rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (min-width: 38em) {
@@ -98,12 +108,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0;
   color: #505050;
+  text-align: center;
+
   a {
     color: #505050;
   }
+
   small {
     font-size: 75%;
     font-weight: 400;
@@ -114,10 +126,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 48em) {
   .masthead-title {
-    text-align: center;
+    margin: 0 auto;
+
     small {
       display: none;
     }
+  }
+  .displayOnlyInLargeViewport {
+    display: none !important;
+  }
+  .displayOnlyInSmallViewport {
+    display: inline;
   }
 }
 
@@ -149,10 +168,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem;
   /* 15px */
-  color: rgba(255, 255, 255, 0.6);
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+
   a {
     font-weight: normal;
     color: #fff;
@@ -170,6 +189,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-item {
   padding: 1rem;
+  border-bottom: 1px solid #eee;
+
   p:last-child {
     margin-bottom: 0;
   }
@@ -179,12 +200,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #eee;
 }
 
 .sidebar-nav-item {
   display: block;
   padding: .5rem 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+
   &.active {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
@@ -229,6 +252,7 @@ a.sidebar-nav-item {
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
+
   &:before {
     display: block;
     content: "";
@@ -241,6 +265,7 @@ a.sidebar-nav-item {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+
   &:active {
     color: #fff;
     background-color: #505050;
@@ -256,6 +281,7 @@ a.sidebar-nav-item {
   .sidebar-toggle {
     position: fixed;
     width: 2.25rem;
+
     &:before {
       padding-bottom: .15rem;
       border-top-width: .45rem;
@@ -293,6 +319,7 @@ a.sidebar-nav-item {
     z-index: 10;
     visibility: visible;
   }
+
   ~ {
     .sidebar, .wrap, .sidebar-toggle {
       -webkit-transform: translateX(14rem);
@@ -321,6 +348,7 @@ a.sidebar-nav-item {
 
 .post-title {
   color: #303030;
+
   a {
     color: #303030;
   }
@@ -334,6 +362,7 @@ a.sidebar-nav-item {
   @extend .post-title;
   margin-bottom: 0;
 }
+
 /* Meta data line below post title */
 
 .post-date {
@@ -354,17 +383,21 @@ a.sidebar-nav-item {
 .related-posts {
   padding-left: 0;
   list-style: none;
+
   h3 {
     margin-top: 0;
   }
+
   li {
     small {
       font-size: 75%;
       color: #999;
     }
+
     a:hover {
       color: #268bd2;
       text-decoration: none;
+
       small {
         color: inherit;
       }
@@ -395,6 +428,7 @@ a.sidebar-nav-item {
   display: block;
   padding: 1rem;
   border: 1px solid #eee;
+
   &:first-child {
     margin-bottom: -1px;
   }
@@ -408,16 +442,18 @@ a.pagination-item:hover {
 
 @media (min-width: 30em) {
   .pagination {
-    margin: 3rem 0;
+    margin: 3rem 0 0;
   }
   .pagination-item {
     float: left;
     width: 50%;
+
     &:first-child {
       margin-bottom: 0;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
     }
+
     &:last-child {
       margin-left: -1px;
       border-top-right-radius: 4px;
@@ -438,10 +474,12 @@ a.pagination-item:hover {
     left: auto;
     right: -14rem;
   }
+
   .sidebar-toggle {
     left: auto;
     right: 1rem;
   }
+
   #sidebar-checkbox:checked ~ {
     .sidebar, .wrap, .sidebar-toggle {
       -webkit-transform: translateX(-14rem);
@@ -452,73 +490,98 @@ a.pagination-item:hover {
 }
 
 /*
- * Themes
- *
- * Apply custom color schemes by adding the appropriate class to the `body`.
- * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
+ * Theme: theme-base-0d
  */
 
-@mixin theme($color) {
+$primary-color: #6a9fb5;
+$primary-dark: #3D697B;
+$light-highlight: #f9f9f9;
+$light-heading: #313131;
+$dark-highlight: #424242;
+$dark-heading: #bacddb;
+
+@mixin theme($main-color, $main-color-dark: "black") {
   .sidebar, .sidebar-toggle:active, #sidebar-checkbox:checked ~ .sidebar-toggle {
-    background-color: $color;
+    background-color: $main-color-dark;
   }
   .container a, .sidebar-toggle, .related-posts li a:hover {
-    color: $color;
+    color: $main-color;
   }
   .intro .about-me-button {
-    background-color: $color;
+    background-color: $main-color;
   }
   .intro h2 {
-    color: $color;
+    color: $main-color;
+  }
+  .toggle-thumb {
+    border: 2px solid $main-color;
   }
 }
 
-/* Red */
-
-.theme-base-08 {
-  @include theme(#ac4142)
+@mixin dark-theme-on($background-color: "#22272E", $text-color: "#b5aea5", $left: "27px") {
+  body {
+    background-color: #{$background-color};
+    color: #{$text-color};
+  }
+  .card {
+    background-color: $dark-highlight;
+  }
+  .toggle-thumb {
+    left: #{$left};
+  }
+  .toggle-track-check {
+    opacity: 100;
+  }
+  .toggle-track-x {
+    opacity: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-heading;
+  }
+  code {
+    background-color: $dark-highlight;
+  }
+  a.pagination-item:hover {
+    background-color: $dark-highlight;
+  }
 }
 
-/* Orange */
-
-.theme-base-09 {
-  @include theme(#d28445)
+@mixin dark-theme-off($background-color: "white", $text-color: "#515151", $left: "1px") {
+  body {
+    background-color: #{$background-color};
+    color: #{$text-color};
+  }
+  .card {
+    color: $background-color;
+  }
+  .toggle-thumb {
+    left: #{$left};
+  }
+  .toggle-track-check {
+    opacity: 0;
+  }
+  .toggle-track-x {
+    opacity: 100;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $light-heading;
+  }
+  code {
+    background-color: $light-highlight;
+  }
+  a.pagination-item:hover {
+    background-color: #f5f5f5;
+  }
 }
 
-/* Yellow */
-
-.theme-base-0a {
-  @include theme(#f4bf75)
+html, html[data-theme="light"] {
+  @include theme($primary-color, $primary-color);
+  @include dark-theme-off();
 }
 
-/* Green */
-
-.theme-base-0b {
-  @include theme(#90a959)
-}
-
-/* Cyan */
-
-.theme-base-0c {
-  @include theme(#75b5aa)
-}
-
-/* Blue */
-
-.theme-base-0d {
-  @include theme(#6a9fb5)
-}
-
-/* Magenta */
-
-.theme-base-0e {
-  @include theme(#aa759f)
-}
-
-/* Brown */
-
-.theme-base-0f {
-  @include theme(#8f5536)
+html[data-theme="dark"] {
+  @include dark-theme-on();
+  @include theme($primary-color, $primary-dark);
 }
 
 /*
@@ -534,9 +597,11 @@ a.pagination-item:hover {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
+
   .sidebar-toggle {
     box-shadow: 0 0 0 .25rem #fff;
   }
+
   .sidebar {
     box-shadow: 0.25rem 0 0.5rem rgba(0, 0, 0, 0.1);
   }

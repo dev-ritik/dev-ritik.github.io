@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="theme-base-0d">
+<body>
+<script>!function(){const t=function(){let t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();!function(t){document.documentElement.setAttribute("data-theme",t)}(t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))}()</script>
+{% include sidebar.html %}
 
-    {% include sidebar.html %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
+<div class="wrap">
+  <div class="masthead">
+    <div class="container header">
+      <h3 class="masthead-title">
+        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+        <small>{{ site.tagline }}</small>
+      </h3>
+      <div class="toggle displayOnlyInLargeViewport" onclick="modeSwitcher()">
+        <div class="toggle-track">
+          <div class="toggle-track-check"><span class="toggle_BsTx">🌜</span></div>
+          <div class="toggle-track-x"><span class="toggle_BsTx">🌞</span></div>
         </div>
-      </div>
-
-      <div class="container content">
-        {{ content }}
+        <div class="toggle-thumb"></div>
+        <input type="checkbox" class="toggle-screen-reader-only" id="toggle-mode-cb"/>
       </div>
     </div>
+  </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  <div class="container content">
+    {{ content }}
+  </div>
+</div>
 
-      <script src='{{ site.baseurl }}/public/js/script.js'></script>
-    <br>
-    <br>
-    {% include footer.html %}
-  </body>
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<script src='{{ site.baseurl }}/public/js/script.js'></script>
+{% include footer.html %}
+</body>
 </html>
