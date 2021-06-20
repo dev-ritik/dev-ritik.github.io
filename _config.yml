@@ -9,10 +9,7 @@ collections:
 # Setup
 title: Ritik Kumar
 tagline: ''
-description: |
-  <div class="image">
-    <img class="thumbnail" src="/public/assets/me.jpg">
-  </div>
+
 url: https://ritik.ml
 baseurl: ''
 paginate: 4
@@ -35,7 +32,7 @@ sass:
 
 # Custom vars
 version: 0.1.0
-head: "/public/assets/me.jpg"
+head: "/public/assets/me/me_364.jpg"
 
 exclude:
   - medium-to-markdown*
