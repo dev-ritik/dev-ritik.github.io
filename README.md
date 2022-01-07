@@ -14,7 +14,7 @@ Parts of this project are 'inspired' from these sources:
 Dark(Dim) mode:
 - https://derekkedziora.com/blog/dark-mode-revisited
 - Button used here: https://create-react-app.dev/
-- Github's Dark-dimmed mode UI colors
+- GitHub's Dark-dimmed mode UI colors
 
 
 ## License
