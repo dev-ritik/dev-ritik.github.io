@@ -19,8 +19,8 @@ open-sourced projects. In the past, I have also developed and maintained a few w
 campus.
 
 I mostly build and analyse cool stuff, usually around Linux🐧 and networking or fixing issues in web servers. My other
-hobbies include reading books📚, finance📈 and consuming stuff about modern history & geopolitics, particularly around
-WW II. I also like listening to all kinds of music.
+hobbies include reading [books](https://books.ritik.ml/)📚, finance📈 and consuming stuff about modern history &
+geopolitics, particularly around WW II. I also like listening to all kinds of music.
 
 If you found anything around interesting, feel free to use any of the channels below to connect with me!🙂
 
