@@ -1,5 +1,5 @@
-# ritik.ml
-Link to my personal website: https://ritik.ml/
+# ritik.ga
+Link to my personal website: https://ritik.ga/
 
 ## Stack
 - Built on `Jekyll`.

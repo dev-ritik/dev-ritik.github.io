@@ -10,7 +10,8 @@ collections:
 title: Ritik Kumar
 tagline: ''
 
-url: https://ritik.ml
+url: https://ritik.ga
+base_domain: ritik.ga # For hosted subdomains
 baseurl: ''
 paginate: 4
 permalink: pretty
