@@ -26,15 +26,15 @@ If you found anything around interesting, feel free to use any of the channels b
 
 <div align="center">
 <p>
-<a href="mailto:ritikkne@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-fw" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://github.com/dev-ritik"><i class="fa fa-github" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://github.com/{{ site.author.github_username }}"><i class="fa fa-github" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://twitter.com/ritik___"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://twitter.com/{{ site.author.twitter_username }}"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.linkedin.com/in/ritik-kumar/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://ritikk.medium.com/"><i class="fa fa-medium" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="{{ site.author.medium_url }}"><i class="fa fa-medium" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
 <a href="https://www.youtube.com/channel/UCaBW8G_TO9dQ9yjlmsAjpsg"><i class="fa fa-youtube" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;

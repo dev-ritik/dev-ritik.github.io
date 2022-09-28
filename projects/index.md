@@ -6,6 +6,7 @@ projects:
     desc: Finsights is an application endeavouring to provide help with passive investments. I work on this as a hobby project. (Helps me with my investments!)
     color: "#5065A8"
     url: https://finsights.ml/
+    github: https://github.com/dev-ritik/Finsights-frontend
     tech: Python-Django, Postgres, Docker, React
   Network streaming analytics systems for last-mile networks:
     desc: Capture packet-level data from the last mile network (end-users devices like home routers).

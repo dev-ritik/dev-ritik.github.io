@@ -1,4 +1,4 @@
-encoding: utf-8
+encoding: UTF-8
 collections:
   experience:
     output: true
@@ -20,7 +20,11 @@ paginate_path: "/page/:num/"
 # About/contact
 author:
   name: Ritik Kumar
-  url: https://twitter.com/ritik___
+  twitter_username: ritik___
+  github_username: dev-ritik
+  linkedin_username: ritik-kumar
+  medium_url: https://ritikk.medium.com
+  email: ritikkne@gmail.com
 
 # Gems
 plugins:
@@ -29,7 +33,7 @@ plugins:
 # Sass settings
 sass:
   sass_dir: _scss
-  style: :compressed
+  style: compressed
 
 # Custom vars
 version: 0.1.0

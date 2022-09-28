@@ -3,13 +3,13 @@
   <hr class="footer-hr">
   <div align="center">
     <p>
-      <a href="mailto:ritikkne@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a>
+      <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a>
       &nbsp; &nbsp; &nbsp;
-      <a href="https://github.com/dev-ritik"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://github.com/{{ site.author.github_username }}"><i class="fa fa-github" aria-hidden="true"></i></a>
       &nbsp; &nbsp; &nbsp;
-      <a href="https://twitter.com/ritik___"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/{{ site.author.twitter_username }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
       &nbsp; &nbsp; &nbsp;
-      <a href="https://www.linkedin.com/in/ritik-kumar/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
       &nbsp; &nbsp; &nbsp;
       <a href="{{ "/atom.xml" | prepend: site.baseurl }}"><i class="fa fa-rss" aria-hidden="true"></i></a>
       &nbsp; &nbsp; &nbsp;
@@ -17,7 +17,7 @@
       &nbsp; &nbsp; &nbsp;
     </p>
   </div>
-  <p class="credit">Designed and Developed by <a href="https://twitter.com/ritik___">Ritik</a> in <i
+  <p class="credit">Designed and Developed by <a href="https://twitter.com/{{ site.author.twitter_username }}">Ritik</a> in <i
     class="fa fa-heart"></i> with <i class="fa fa-code"></i> and <i class="fa fa-coffee"></i></p>
 
 </footer>
