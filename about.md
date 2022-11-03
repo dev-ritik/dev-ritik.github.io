@@ -36,7 +36,7 @@ If you found anything around interesting, feel free to use any of the channels b
 &nbsp; &nbsp; &nbsp;
 <a href="{{ site.author.medium_url }}"><i class="fa fa-medium" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://www.youtube.com/channel/UCaBW8G_TO9dQ9yjlmsAjpsg"><i class="fa fa-youtube" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://www.youtube.com/@{{ site.author.youtube_handle }}"><i class="fa fa-youtube" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
 <a href="/key.pub"><i class="fa fa-key" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
