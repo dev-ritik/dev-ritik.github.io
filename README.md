@@ -16,6 +16,8 @@ Dark(Dim) mode:
 - Button used here: https://create-react-app.dev/
 - GitHub's Dark-dimmed mode UI colors
 
+## Development
+- Run the command `jekyll serve`
 
 ## License
 `Lanyon` Jekyll theme is under the [MIT license](https://github.com/poole/lanyon/blob/master/LICENSE.md).
