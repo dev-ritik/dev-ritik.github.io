@@ -8,7 +8,7 @@ time: 7
 
 ![](https://cdn-images-1.medium.com/max/1200/0*0rW_QpMizH-BiO_v)
 
-> This blog will help you establish the most basic server right on your computer. We shall be covering some theory with simple code explanation to follow to create a server. The blog aims to make you familiar with the working of the simplest server.
+> Buckle up for a swift journey! This blog is your ticket to setting up the most basic server on your computer. We’ll blend theory with easy-to-follow code explanations, breaking down the magic of socket-based servers. Get ready to unravel the secrets of the simplest sockets in no time! 🌐💡
 <!--break-->
 
 ### Prerequisites
@@ -136,7 +136,7 @@ index.html [ <=> ] 139 — .-KB/s in 0s
 
 Being pretty simple in use, it’s good to try them all once.
 
-> The vast landscape of Computer Networking and Services is waiting to be explored. Hope this would have helped you to get some introduction in the field. Moving ahead, you can give my next blog on ‘HTTP & WebSocket’ a read…
+> 🚀 Ready to Conquer the Digital Frontier? This glimpse is just the beginning of your journey into Computer Networking and Services. Dive into my next blog on ‘HTTP & WebSocket’ for an even more thrilling ride. The tech adventure continues! 🌐💻
 
 [HTTP & WebSockets](https://medium.com/mobile-development-group/http-websockets-9c6704e44a2a?source=post_page-----cc465f340658--------------------------------)
 > How are they connected to sockets? How is HTTP evolving? HTTP/2? HTTP/3? QUIC? Is WebSockets the same as Sockets?…

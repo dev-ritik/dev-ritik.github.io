@@ -6,13 +6,12 @@ medium: https://medium.com/mobile-development-group/http-websockets-9c6704e44a2a
 time: 11
 ---
 
-In the last blog, [Simple Servers](https://medium.com/mobile-development-group/simple-servers-cc465f340658), I covered `sockets based communication`, which is very low implementation. Thus these are not the things you would be interacting with directly while writing servers today. _They probably would be `HTTP & HTTPS`!_.
+In our last tech rendezvous, we delved into the realm of [Simple Servers](https://medium.com/mobile-development-group/simple-servers-cc465f340658) and got cosy with sockets-based communication - the unsung heroes behind the scenes. But let’s face it, when it comes to writing servers today, it’s the dynamic duo of **HTTP** and **HTTPS** taking centre stage!
 
-Today, the world works on HTTP. The entire consumer internet infrastructure, with terabytes of data, moved across networks every second to these devices in our hands, is constituted mostly by HTTP & WebSocket.
+> Picture this: the entire digital cosmos, with terabytes of data zipping around every second to the gadgets in our hands - it’s mostly all orchestrated by the magic of HTTP and WebSocket. But here’s the kicker - how do they tango with sockets? How is HTTP evolving, and is WebSocket just a fancy cousin of the classic socket?
 
-> OK! so how are they related to sockets? How is HTTP evolving? Is `WebSockets` the same as `Sockets`?
+Hold on tight as we demystify these web wonders! I’ll be your guide, unravelling the tech tapestry with real-world examples and steering clear of unnecessary tech mumbo-jumbo. Let’s embark on a tech exploration where complexity meets simplicity! 🚀🌐💡
 
-> I will explain the key concepts with examples related to them, while avoiding as much technical jargon as possible.
 <!--break-->
 
 ## Prerequisites
@@ -162,7 +161,7 @@ There are various libraries available to abstract the working of WebSockets.
 ---
 
 ## Conclusion
-I hope you have understood these standard concepts. HTTP is indeed a promising one. I have covered how these are secured (HTTPS and TLS-SSL) in my next blog:
+🌟 Nailed the Basics! 🚀 Now, brace yourself for the exciting part – the promise of HTTP. Curious about the security dance? Dive into my next blog on HTTPS and TLS-SSL. The adventure continues! 💻🔒
 
 [Trust! TLS-SSL and HTTPS](https://medium.com/mobile-development-group/trust-tls-ssl-and-https-b925ac9d59?source=post_page-----9c6704e44a2a--------------------------------)
 > How is the HTTP traffic secured? What does that lock indicate? How do we establish trust? How can I say that indeed medium.com…

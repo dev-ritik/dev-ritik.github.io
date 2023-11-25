@@ -5,11 +5,12 @@ layout: post
 medium: https://medium.com/mobile-development-group/trust-tls-ssl-and-https-b925ac9d59
 time: 14
 ---
-In the last blog on [HTTP](https://medium.com/@ritikk/http-websockets-9c6704e44a2a), I explained the working and evolution of `HTTP` towards better performance. As you might know, HTTP by itself isn’t secure. But that lock on the top left of your browser gives a sense of being safe on the internet. The Internet is a hostile place; my server’s access logs are the testimony!
+In our last rendezvous with [HTTP](https://medium.com/@ritikk/http-websockets-9c6704e44a2a), we dove into its evolution for better performance. But here’s the plot twist — HTTP alone is about as secure as a paper umbrella in a storm. Yet, that little lock🔐 in the corner of your browser assures you of safety in the vast and sometimes treacherous realm of the internet. Trust me; my server’s access logs tell tales of the wild digital west!
 
-> How is the HTTP traffic secured? What does that lock indicate? How do we establish trust? How can I say that indeed this is the article I was supposed to read!? Is this genuinely medium.com??
+> So, what’s the secret sauce behind securing HTTP traffic? What’s the story behind that reassuring lock? How do we establish trust in this cyber jungle? And most importantly, is this Medium article genuinely what it claims to be?
 
-> I will explain the key concepts with examples related to them while trying to avoid as much technical jargon as possible.
+Join me on this journey as we unravel the mysteries of HTTP security. I’ll be your guide, using real-world examples to break down complex concepts without drowning you in technical jargon. Let’s embark on a tech adventure where security meets simplicity! 🚀🔐🌐
+
 <!--break-->
 
 ## Prerequisites
@@ -250,7 +251,7 @@ $ sudo ln -sf /etc/letsencrypt/live/<domain> /etc/letsencrypt/live/cert
 This generates a cert and private key for your website and stores the Let’s encrypt intermediate cert as well for the trust chain at `/etc/letsencrypt/live/cert/` . Now you could easily add their location to Nginx or Apache(httpd) server config file or use them with the simple HTTPS example mentioned above.
 
 ## Conclusion
-Wooh that was too much of content! I hope you have understood these standard concepts. TLS is indeed interesting! It has many other aspects and a lot of cryptography involved!. I have added some of my examples here. Go ahead and play and learn as you like. Check out the following repository demonstrating implementation based on the stuff explained above.
+🎉 Phew! That was a content-packed ride! 🚀 Unraveled the mysteries of TLS, didn't we? Dive into the intriguing world of cryptography and explore more with my examples. Play, learn, and enjoy the tech playground. Ready for hands-on fun? Check out the repository for a real-life implementation based on what we've explored! 💡💻
 
 [dev-ritik/Secure-file-transfer](https://github.com/dev-ritik/Secure-file-transfer?source=post_page-----b925ac9d59--------------------------------)
 > A demonstration for secure file transfer within an organization using key-chain validation. The files are secured using asymmetric encryption…

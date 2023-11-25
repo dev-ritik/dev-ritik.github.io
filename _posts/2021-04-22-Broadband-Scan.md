@@ -5,6 +5,8 @@ layout: post
 medium: https://ritikk.medium.com/i-scanned-all-my-broadband-peers-17febead6797
 time: 4
 ---
+> Hold onto your internet connection because things are about to get interesting! I recently went on a scanning spree, unveiling the mysteries of my broadband peers and the results? Mind-blowing! 📡🔍 Ready to dive into the fascinating world of broadband revelations? Let’s roll! 🚀💻
+
 My internet broadband provider is one of the popular Internet service providers in this region. I have been their customer for quite some time now. Though comments and reviews may point otherwise, I am satisfied by their service in my region with close to promised speeds mostly.
 
 They use NAT and provide static IPs under the `10.0.0.0/8` private block, and if I am not wrong, this same subdomain is used in West Bengal's operational area. As of this moment, they don’t block any cross-customer communication. This makes it possible to scan the entire network. And as I have mentioned later, this may be a security concern.
