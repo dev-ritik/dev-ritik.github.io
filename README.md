@@ -10,6 +10,7 @@ Link to my personal website: https://dev-ritik.github.io
 Parts of this project are 'inspired' from these sources:
 - https://github.com/captn3m0/captn3m0.github.com
 - https://github.com/jogendra/jogendra.github.io
+- Truncate posts: https://gist.github.com/mikeygee/2626538
 
 Dark(Dim) mode:
 - https://derekkedziora.com/blog/dark-mode-revisited

@@ -29,52 +29,45 @@ title: Home
 <br>
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {%- for post in paginator.posts -%}
   <div class="post">
     <h1 class="post-title">
-      {% if post.medium %}
-      <a href="{{ post.medium | absolute_url }}">
-      {% else %}
-      <a href="{{ post.url | absolute_url }}">
-      {% endif %}
-      {{ post.title }}
-      </a>
+      {%- if post.medium -%}<a href="{{ post.medium | absolute_url }}">
+      {%- else -%}<a href="{{ post.url | absolute_url }}">
+      {%- endif -%}{{ post.title }}</a>
     </h1>
 
     <section class="post-excerpt" itemprop="description">
-<!--      https://gist.github.com/mikeygee/2626538-->
       {{ post.content | split:'<!--break-->' | first }}
-      {% if post.medium %}
-      <a href="{{ post.medium }}">read more...</a>
-      {% else %}
-      <a href="{{ post.url }}">read more...</a>
-      {% endif %}
+      {%- if post.medium -%}<a href="{{ post.medium }}">read more...</a>
+      {%- else -%}<a href="{{ post.url }}">read more...</a>
+      {%- endif -%}
     </section>
     <br>
     <section class="post-meta">
       <div class="left-align"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</div>
-      {% include reading-time.html %}
+      {%- include reading-time.html -%}
     </section>
   </div>
-  {% if forloop.last == false %}
+  {%- if forloop.last == false -%}
   <hr>
-  {% endif %}
-  {% endfor %}
+  {%- endif -%}
+  {%- endfor -%}
 </div>
 
 <div class="pagination">
-  {% if paginator.next_page %}
+  {%- if paginator.next_page -%}
   <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
+  {%- else -%}
   <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-  {% if paginator.page == 2 %}
+  {%- endif -%}
+  {%- if paginator.previous_page -%}
+  {%- if paginator.page == 2 -%}
   <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-  {% else %}
+  {%- else -%}
   <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-  {% endif %}
-  {% else %}
+  {%- endif -%}
+  {%- else -%}
   <span class="pagination-item newer">Newer</span>
-  {% endif %}
+  {%- endif -%}
 </div>
