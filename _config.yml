@@ -11,7 +11,7 @@ title: Ritik Kumar
 tagline: ''
 
 url: https://dev-ritik.github.io
-base_domain: ritik.ga # For hosted subdomains
+books_domain: https://ritikbooks.blogspot.com/
 baseurl: ''
 paginate: 4
 permalink: pretty
