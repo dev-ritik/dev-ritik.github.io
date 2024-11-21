@@ -30,7 +30,7 @@ If you found anything around interesting, feel free to use any of the channels b
 &nbsp; &nbsp; &nbsp;
 <a href="https://github.com/{{ site.author.github_username }}"><i class="fa fa-github" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
-<a href="https://twitter.com/{{ site.author.twitter_username }}"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
+<a href="https://x.com/{{ site.author.twitter_username }}"><i class="fa fa-twitter" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
 <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:40px;color:#2980b9"></i></a>
 &nbsp; &nbsp; &nbsp;
