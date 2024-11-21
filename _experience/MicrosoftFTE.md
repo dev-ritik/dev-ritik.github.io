@@ -7,4 +7,4 @@ reading_order: 4
 company_url: https://azure.microsoft.com/en-in/product-categories/networking/
 ---
 
-Software Engineer at Microsoft Azure Networking India, Bangalore.
+Contributing to infrastructure solutions and features for control plane services in software-defined networking in Azure. Designed and implemented enhancements for improved performance and reliability.
