@@ -17,6 +17,10 @@ Dark(Dim) mode:
 - Button used here: https://create-react-app.dev/
 - GitHub's Dark-dimmed mode UI colors
 
+## Installation
+- Install jekyll: https://jekyllrb.com/docs/installation/ubuntu/
+- Install dependency: `gem install jekyll-paginate`
+
 ## Development
 - Run the command `jekyll serve`
 
