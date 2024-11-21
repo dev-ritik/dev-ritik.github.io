@@ -5,7 +5,7 @@ projects:
   Finsights:
     desc: Finsights is an application endeavouring to provide help with passive investments. I work on this as a hobby project. (Helps me with my investments!)
     color: "#5065A8"
-    url: https://finsights.ml/
+    url: https://fin.uaenorth.cloudapp.azure.com/
     github: https://github.com/dev-ritik/Finsights-frontend
     tech: Python-Django, Postgres, Docker, React
   Network streaming analytics systems for last-mile networks:
