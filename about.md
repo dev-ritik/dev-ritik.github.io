@@ -6,23 +6,23 @@ permalink: about.html
 
 👋 Hi there! Thanks for stopping by ❤️!
 
-I'm Ritik Kumar, 2021 Computer Science & Engineering graduate🎓 from Indian Institute of Technology, Roorkee, interested
-in Computer networks. I am a Software Engineer at `Microsoft India` in the Azure Networking team. I have good
-experience working as a Backend Developer👨‍💻.
+I'm **Ritik Kumar**, a **Computer Science & Engineering graduate (IIT Roorkee, 2021)**, currently working as a **Software Engineer at Uber India**. I’m deeply passionate about **computer networks** and **backend engineering**, with hands-on experience building large-scale, high-performance systems.
 
-I was `Google Summer of Code` Student Developer 2019 for [NDN](https://named-data.net/project/) `(Named Data Network)`
-and worked on `NpChat`, a peer to peer decentralised media sharing application based on NDN for Android. I had interned
-with `Microsoft India`, where I worked on their new `EDGE` `(Anaheim)` browser-based on `Chromium`. Recently, I
-interned at [Fampay](https://fampay.in) & [Triomics](https://triomics.in/) as a Backend Engineer. I worked as a research
-intern at [SNL](https://snl.cs.ucsb.edu/) `(Systems and Networking Lab)` UCSB. I have also contributed to some
-open-sourced projects. In the past, I have also developed and maintained a few widely used apps for the IIT Roorkee
-campus.
+Previously, I’ve worked as a **Backend Engineer at [Eightfold AI](https://eightfold.ai/)** on the data platform team, and as an **SDE at [Microsoft](https://microsoft.com/)** India in the Azure Networking organization.
 
-I mostly build and analyse cool stuff, usually around Linux🐧 and networking or fixing issues in web servers. My other
-hobbies include reading [books]({{site.books_domain}})📚, finance📈 and consuming stuff about modern history &
-geopolitics, particularly around WW II. I also like listening to all kinds of music.
+I was also a **Google Summer of Code 2019 Developer** with the [NDN Project](https://named-data.net/project/), where I built **NpChat**, a peer-to-peer decentralized media-sharing app for Android based on Named Data Networking.
 
-If you found anything around interesting, feel free to use any of the channels below to connect with me!🙂
+Over the years, I’ve interned with several leading startups and research groups, including:
+- **Microsoft India**, contributing to the new **Edge (Anaheim)** browser built on Chromium
+- **[Fampay](https://fampay.in)** — India’s first neobank for teenagers and their families — as a backend engineer
+- **[Triomics](https://triomics.com/)** as a backend engineer
+- **[SNL, UCSB](https://snl.cs.ucsb.edu/)** — the Systems and Networking Lab — as a research intern
+
+Beyond work, I enjoy tinkering with **Linux 🐧**, debugging **web server internals**, and contributing to **open-source projects**. I’ve also built and maintained several popular apps used across the IIT Roorkee campus.
+
+Outside of tech, I love **reading** ([books]({{site.books_domain}})📚), following **finance and markets 📈**, and diving into **modern history and geopolitics**, especially around World War II. You’ll also find me exploring new genres of **music** 🎶.
+
+If anything here sparks your interest, feel free to connect — I’d love to chat! 🙂
 
 <div align="center">
 <p>
