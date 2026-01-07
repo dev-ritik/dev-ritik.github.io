@@ -194,6 +194,13 @@ The data below shows the **average ratio between retail and sNII subscriptions**
 
 ---
 
-IPO investing can be tricky, but data gives a way to cut through the hype. By looking at GMP, subscription patterns, and sale types, it’s possible to get a better sense of which IPOs are likely to perform well on listing day and which ones are more about luck than strategy.
+# Conclusion: Data Over Hype
+The numbers reveal a clear pattern: IPO success in India isn’t just a roll of the dice; it’s a signal-driven game. To navigate this market effectively, keep these three data-backed rules in mind:
+
+- **Trust the GMP**: With a 0.76 correlation, the Grey Market Premium is your most reliable North Star. A GMP above 20% is the historical sweet spot for high-probability listing gains.
+- **The 30x Threshold**: Subscription matters, but only at scale. Once total demand crosses 30x, the likelihood of a successful listing (1%+ gain) becomes significantly more stable.
+- **Quality of Capital**: IPOs focused on Fresh Capital consistently outperform OFS-heavy exits. If the money stays in the company, the market usually rewards it.
+
+The Final Word: A massive listing “pop” does not guarantee long-term growth. The data shows no strong link between Day 1 gains and Year 1 returns. For the short-term trader, follow the signals; for the long-term investor, look beyond the first day’s excitement.
 
 If you have ideas for other comparisons or signals to analyse, I’d love to hear them! Drop your suggestions in the comments, and let’s dig deeper together.
